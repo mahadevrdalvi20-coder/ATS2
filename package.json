@@ -1,0 +1,15 @@
+{
+  "name": "meridian-ats",
+  "version": "1.0.0",
+  "description": "Applicant tracking system for an IT services company: client-project requisitions, client approval rounds, notice-period fit, offer-drop risk, source ROI and DPDP retention.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "test": "node --test tests/*.test.js",
+    "reset": "rm -f data/db.json && node server/server.js"
+  },
+  "license": "MIT"
+}

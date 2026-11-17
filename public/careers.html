@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers at Meridian</title>
+  <meta name="description" content="Open positions at Meridian Technologies — Pune, Bangalore and Goa. Apply and track your application.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;800&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="portal">
+  <header class="p-hero">
+    <div class="p-wrap">
+      <nav class="p-nav"><div class="brand" style="padding:0"><div class="brand-mark">M</div><div><b>Meridian Technologies</b><span>Careers</span></div></div>
+        <div class="row"><a href="#track" class="btn sm">Track my application</a><a href="./" class="btn sm ghost p-staff">Staff sign-in</a></div></nav>
+      <h1>Build software for banks, retailers and logistics leaders across the US and UK.</h1>
+      <p>450 engineers across Pune, Bangalore and Goa. Apply in two minutes — and see exactly where your application stands, any time.</p>
+    </div>
+  </header>
+  <main class="p-wrap" id="portal">
+    <section>
+      <div class="filters" style="margin-top:24px">
+        <input class="input wide" id="pq" placeholder="Search roles or skills…" aria-label="Search roles">
+        <select id="ploc" class="input" aria-label="Location"><option value="">All locations</option><option>Pune</option><option>Bangalore</option><option>Goa</option></select>
+        <span class="muted small" id="pcount"></span>
+      </div>
+      <div id="jobs" class="p-jobs"><div class="empty">Loading open positions…</div></div>
+    </section>
+    <section id="track" class="card p-track">
+      <div class="card-h"><div><h2>Track your application</h2><p>Use the reference number from your confirmation and the mobile number you applied with.</p></div></div>
+      <div class="card-b">
+        <form id="trackf" class="row" style="align-items:flex-end">
+          <div class="field"><label for="tref">Reference</label><input id="tref" name="ref" placeholder="APP-00012" required></div>
+          <div class="field"><label for="tphone">Mobile number</label><input id="tphone" name="phone" type="tel" placeholder="98xxxxxxxx" required></div>
+          <button class="btn primary">Check status</button>
+        </form>
+        <div id="trackout" style="margin-top:16px"></div>
+      </div>
+    </section>
+    <footer class="p-foot small muted">Meridian Technologies Pvt. Ltd. · Your data is processed only for recruitment and erased when no longer needed, in line with the Digital Personal Data Protection Act, 2023. To request erasure, email privacy@meridian.example.</footer>
+  </main>
+  <dialog id="modal" class="modal wide"></dialog>
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="js/portal.js"></script>
+</body>
+</html>
